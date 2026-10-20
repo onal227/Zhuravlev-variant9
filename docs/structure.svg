@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#ffffff"/>
+  <style>text{font-family:Arial,sans-serif;fill:#111827} .box{stroke:#1f2937;stroke-width:3;rx:12;ry:12} .wire{stroke:#2563eb;stroke-width:4;fill:none;marker-end:url(#arrow)}</style>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2563eb"/></marker></defs>
+  <text x="700" y="55" text-anchor="middle" font-size="30" font-weight="700">Структурная схема системы варианта 9</text>
+  <rect class="box" x="70" y="150" width="230" height="90" fill="#dbeafe"/><text x="185" y="188" text-anchor="middle" font-size="24" font-weight="700">LDR</text><text x="185" y="220" text-anchor="middle" font-size="18">освещенность</text>
+  <rect class="box" x="70" y="300" width="230" height="90" fill="#dcfce7"/><text x="185" y="338" text-anchor="middle" font-size="24" font-weight="700">NTC</text><text x="185" y="370" text-anchor="middle" font-size="18">температура</text>
+  <rect class="box" x="70" y="450" width="230" height="90" fill="#fef3c7"/><text x="185" y="488" text-anchor="middle" font-size="24" font-weight="700">POT</text><text x="185" y="520" text-anchor="middle" font-size="18">заряд батареи</text>
+  <rect class="box" x="470" y="265" width="280" height="170" fill="#e0e7ff"/><text x="610" y="330" text-anchor="middle" font-size="28" font-weight="700">Arduino Uno</text><text x="610" y="370" text-anchor="middle" font-size="19">сбор и обработка</text><text x="610" y="400" text-anchor="middle" font-size="19">данных</text>
+  <rect class="box" x="930" y="130" width="260" height="100" fill="#fee2e2"/><text x="1060" y="170" text-anchor="middle" font-size="24" font-weight="700">Реле</text><text x="1060" y="202" text-anchor="middle" font-size="18">светильник</text>
+  <rect class="box" x="930" y="280" width="260" height="100" fill="#dbeafe"/><text x="1060" y="320" text-anchor="middle" font-size="24" font-weight="700">Синий LED</text><text x="1060" y="352" text-anchor="middle" font-size="18">индикация темноты</text>
+  <rect class="box" x="930" y="430" width="260" height="100" fill="#f3e8ff"/><text x="1060" y="470" text-anchor="middle" font-size="24" font-weight="700">Serial Monitor</text><text x="1060" y="502" text-anchor="middle" font-size="18">DATA и EVENT</text>
+  <rect class="box" x="470" y="570" width="280" height="100" fill="#f3f4f6"/><text x="610" y="610" text-anchor="middle" font-size="24" font-weight="700">Node-RED</text><text x="610" y="642" text-anchor="middle" font-size="18">разбор лога</text>
+  <rect class="box" x="930" y="570" width="260" height="100" fill="#fef3c7"/><text x="1060" y="610" text-anchor="middle" font-size="24" font-weight="700">SQLite</text><text x="1060" y="642" text-anchor="middle" font-size="18">readings и events</text>
+  <path class="wire" d="M300 195 H410 V315 H470"/><path class="wire" d="M300 345 H470"/><path class="wire" d="M300 495 H410 V385 H470"/>
+  <path class="wire" d="M750 315 H850 V180 H930"/><path class="wire" d="M750 350 H930"/><path class="wire" d="M750 385 H850 V480 H930"/>
+  <path class="wire" d="M610 435 V570"/><path class="wire" d="M750 620 H930"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1150" viewBox="0 0 1200 1150">
+  <rect width="1200" height="1150" fill="#ffffff"/>
+  <style>text{font-family:Arial,sans-serif;fill:#111827} .box{stroke:#1f2937;stroke-width:3;rx:14;ry:14} .diamond{stroke:#1f2937;stroke-width:3;fill:#fef3c7} .wire{stroke:#2563eb;stroke-width:4;fill:none;marker-end:url(#arrow)}</style>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2563eb"/></marker></defs>
+  <text x="600" y="48" text-anchor="middle" font-size="30" font-weight="700">Алгоритм работы прошивки</text>
+  <rect class="box" x="420" y="80" width="360" height="70" fill="#dcfce7"/><text x="600" y="124" text-anchor="middle" font-size="24">Начало / setup</text>
+  <rect class="box" x="420" y="200" width="360" height="90" fill="#dbeafe"/><text x="600" y="238" text-anchor="middle" font-size="22">Ожидание 1 секунды</text><text x="600" y="268" text-anchor="middle" font-size="18">таймер millis()</text>
+  <rect class="box" x="420" y="340" width="360" height="90" fill="#dbeafe"/><text x="600" y="378" text-anchor="middle" font-size="22">Считать A0, A1, A2</text><text x="600" y="408" text-anchor="middle" font-size="18">и преобразовать значения</text>
+  <rect class="box" x="420" y="480" width="360" height="90" fill="#f3e8ff"/><text x="600" y="518" text-anchor="middle" font-size="22">Напечатать строку DATA</text><text x="600" y="548" text-anchor="middle" font-size="18">n, s1, s2, s3</text>
+  <polygon class="diamond" points="600,630 800,720 600,810 400,720"/><text x="600" y="713" text-anchor="middle" font-size="22">s1 &lt; 20 %?</text>
+  <rect class="box" x="80" y="875" width="330" height="110" fill="#fee2e2"/><text x="245" y="920" text-anchor="middle" font-size="21">Включить реле и LED</text><text x="245" y="952" text-anchor="middle" font-size="18">если состояние изменилось</text>
+  <rect class="box" x="790" y="875" width="330" height="110" fill="#dcfce7"/><text x="955" y="920" text-anchor="middle" font-size="21">Выключить реле и LED</text><text x="955" y="952" text-anchor="middle" font-size="18">если состояние изменилось</text>
+  <path class="wire" d="M600 150 V200"/><path class="wire" d="M600 290 V340"/><path class="wire" d="M600 430 V480"/><path class="wire" d="M600 570 V630"/>
+  <path class="wire" d="M400 720 H245 V875"/><path class="wire" d="M800 720 H955 V875"/>
+  <text x="330" y="700" font-size="20">да</text><text x="820" y="700" font-size="20">нет</text>
+  <path class="wire" d="M245 985 V1050 H600 V810"/><path class="wire" d="M955 985 V1050 H600 V810"/>
+  <text x="600" y="1100" text-anchor="middle" font-size="18">После обработки перейти к следующему измерению</text>
+</svg>

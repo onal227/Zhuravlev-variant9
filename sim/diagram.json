@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "author": "Вариант 9",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr", "top": -120, "left": 300, "attrs": { "lux": "500" } },
+    { "type": "wokwi-ntc-temperature-sensor", "id": "ntc", "top": 60, "left": 300, "attrs": { "temperature": "20" } },
+    { "type": "wokwi-potentiometer", "id": "pot", "top": 240, "left": 300, "attrs": { "value": "920" } },
+    { "type": "wokwi-relay-module", "id": "relay", "top": 40, "left": 610, "attrs": {} },
+    { "type": "wokwi-led", "id": "led", "top": 230, "left": 640, "attrs": { "color": "blue", "lightColor": "blue" } },
+    { "type": "wokwi-resistor", "id": "rled", "top": 230, "left": 550, "attrs": { "value": "100" } }
+  ],
+  "connections": [
+    [ "uno:5V", "ldr:VCC", "red", [ "v0" ] ],
+    [ "uno:GND.1", "ldr:GND", "black", [ "v0" ] ],
+    [ "uno:A0", "ldr:AO", "green", [ "v0" ] ],
+    [ "uno:5V", "ntc:VCC", "red", [ "v0" ] ],
+    [ "uno:GND.1", "ntc:GND", "black", [ "v0" ] ],
+    [ "uno:A1", "ntc:OUT", "green", [ "v0" ] ],
+    [ "uno:5V", "pot:VCC", "red", [ "v0" ] ],
+    [ "uno:GND.1", "pot:GND", "black", [ "v0" ] ],
+    [ "uno:A2", "pot:SIG", "green", [ "v0" ] ],
+    [ "uno:5V", "relay:VCC", "red", [ "v0" ] ],
+    [ "uno:GND.2", "relay:GND", "black", [ "v0" ] ],
+    [ "uno:8", "relay:IN", "orange", [ "v0" ] ],
+    [ "uno:9", "rled:1", "orange", [ "v0" ] ],
+    [ "rled:2", "led:A", "orange", [ "v0" ] ],
+    [ "uno:GND.2", "led:C", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
