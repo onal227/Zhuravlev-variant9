@@ -14,5 +14,5 @@ if not exist "%TOOLS%\nodered\node_modules\node-red\red.js" (
   pause
   exit /b 1
 )
-"%TOOLS%\node\node.exe" "%TOOLS%\nodered\node_modules\node-red\red.js" -u "%PROJECT_ROOT%"
+"%TOOLS%\node\node.exe" "%TOOLS%\nodered\node_modules\node-red\red.js" -u "%TOOLS%\nodered-data"
 endlocal

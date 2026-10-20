@@ -2,4 +2,9 @@ tools/
 *.log
 *.tmp
 node_modules/
+flows*.json
+.config.*
+settings.js
+package.json
+lib/
 

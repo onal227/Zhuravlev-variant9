@@ -82,7 +82,7 @@
     "id": "sqlite-exec",
     "type": "exec",
     "z": "tab-variant9",
-    "command": "sqlite3 db/variant.db \\\".read db/schema.sql\\\" \\\".read db/load.sql\\\"",
+    "command": "sqlite3 db/variant.db \".read db/schema.sql\" \".read db/load.sql\"",
     "addpay": false,
     "append": "",
     "useSpawn": "false",
