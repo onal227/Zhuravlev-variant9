@@ -2,6 +2,8 @@
 
 Система виртуального сбора и учета данных для уличного освещения на Arduino Uno.
 
+Проект Wokwi: https://wokwi.com/projects/478434512485624833
+
 ## Параметры варианта
 
 - LDR: освещенность 0..100 %, аналоговый вход A0.
@@ -25,6 +27,7 @@
 - `docs/calculations.md` - расчеты.
 - `docs/components.csv` - перечень компонентов.
 - `docs/bom.csv` - заготовка BOM для EasyEDA.
+- `docs/wokwi-project.txt` - сохраненная ссылка на проект Wokwi.
 
 ## Запуск
 
