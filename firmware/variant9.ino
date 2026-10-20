@@ -53,7 +53,7 @@ void setup() {
   pinMode(LED_PIN, OUTPUT);
   setLighting(false);
 
-  Serial.begin(115200);
+  Serial.begin(9600);
   Serial.println("Variant 9: street lighting");
 }
 
