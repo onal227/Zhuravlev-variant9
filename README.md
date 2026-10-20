@@ -24,6 +24,7 @@
 - `data/log_fault.txt` - пример неисправности.
 - `docs/calculations.md` - расчеты.
 - `docs/components.csv` - перечень компонентов.
+- `docs/bom.csv` - заготовка BOM для EasyEDA.
 
 ## Запуск
 
