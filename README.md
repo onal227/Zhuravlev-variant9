@@ -19,14 +19,18 @@
 - `firmware/variant9.ino` - прошивка Arduino.
 - `sim/diagram.json` - схема Wokwi.
 - `db/schema.sql` - структура базы.
-- `db/queries.sql` - три контрольных запроса.
+- `db/queries.sql` - четыре контрольных запроса.
 - `db/load.sql` - пример загрузки.
 - `nodered/flow.json` - flow Node-RED.
 - `data/log.txt` - пример нормального лога.
 - `data/log_fault.txt` - пример неисправности.
 - `docs/calculations.md` - расчеты.
 - `docs/components.csv` - перечень компонентов.
-- `docs/bom.csv` - заготовка BOM для EasyEDA.
+- `docs/schematic.pdf` - финальный экспорт принципиальной схемы EasyEDA.
+- `docs/easyeda_schematic.png` - изображение схемы для просмотра и отчета.
+- `docs/bom.csv` - финальный экспорт BOM из EasyEDA.
+- `docs/Курсовая_пояснительная_записка.docx` - итоговая пояснительная записка.
+- `docs/Инструкция пользователя.docx` - пошаговая инструкция запуска и проверки.
 - `docs/wokwi-project.txt` - сохраненная ссылка на проект Wokwi.
 
 ## Запуск
@@ -60,4 +64,4 @@ sqlite3 db/variant.db ".read db/queries.sql"
 
 ## Перед сдачей
 
-ФИО, группа, даты, ссылка на Wokwi, экспорт EasyEDA и рабочие скриншоты сохранены в проекте. Оставшиеся замечания перед сдачей находятся в `TODO_USER.md`.
+ФИО, группа, даты, ссылка на Wokwi, экспорт EasyEDA, итоговая пояснительная записка и рабочие скриншоты сохранены в проекте. Осталась только очная сверка диапазона NTC с преподавателем и ручной просмотр DOCX в Word перед печатью.
