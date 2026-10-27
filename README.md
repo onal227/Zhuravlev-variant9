@@ -14,7 +14,7 @@
 
 ## Wokwi
 
-[Открыть проект Wokwi](https://wokwi.com/projects/478434512485624833)
+[Открыть проект Wokwi](https://wokwi.com/projects/479052795969392641)
 
 Файлы `sim/diagram.json` и `firmware/variant9.ino` используются вместе в одном проекте Wokwi.
 
